@@ -1,0 +1,92 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to bottom right, #f0f4f8, #cfe0fc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #2b579a;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button {
+  background: #2b579a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #1e3d72;
+}
+
+#matrix-container {
+  display: grid;
+  gap: 5px;
+  background: white;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.matrix-cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+  font-size: 1.2em;
+  color: #333;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.matrix-cell:focus {
+  outline: none;
+  border: 2px solid #2b579a;
+}
+
+.matrix-cell.zero {
+  background-color: #e74c3c;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+#set-zeroes {
+  margin-top: 20px;
+}
